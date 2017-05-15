@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -93,7 +93,7 @@
                                     <segue destination="zeO-s2-eC0" kind="presentation" id="RGU-GN-tsA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dq-2G-nI4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dq-2G-nI4">
                                 <rect key="frame" x="76" y="152" width="168" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -103,6 +103,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.39619006849315069" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="EmailTextField" destination="0dq-2G-nI4" id="LsJ-CK-rLA"/>
+                        <outlet property="PasswordTextField" destination="Z9T-lS-nLf" id="yxU-2o-rnk"/>
+                        <outlet property="SignupUIButton" destination="qXn-FT-x0H" id="grV-AD-XmG"/>
+                        <outlet property="SubmitUIButton" destination="zVs-v2-gzC" id="Gdz-SU-FZz"/>
+                        <outlet property="UsernameTextField" destination="0dq-2G-nI4" id="mnj-nF-TJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLY-v7-d3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +353,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8FC-1K-Eyo"/>
-        <segue reference="sc0-Bs-Syy"/>
+        <segue reference="khE-Jb-He3"/>
+        <segue reference="RGU-GN-tsA"/>
     </inferredMetricsTieBreakers>
 </document>
