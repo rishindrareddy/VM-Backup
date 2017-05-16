@@ -34,7 +34,7 @@ class NewLoginViewController: UIViewController {
     //CLICK EVENT ON LOGIN
     
     @IBAction func LoginClick(_ sender: UIButton) {
-        print("EMAIL : \(EmailUITextField.text)!,,, PASSWORD:\(PasswordUITextField.text)!")
+        print("\n CREDENTIALS:\n EMAIL : \(EmailUITextField.text)!,,, PASSWORD:\(PasswordUITextField.text)! \n")
         
         sendRequest(params: ["e":(EmailUITextField.text)!,"p":(PasswordUITextField.text)!])
     }
@@ -69,14 +69,20 @@ class NewLoginViewController: UIViewController {
     let send = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
     
     if(error != nil){
-    print(error.debugDescription)
+    print("\nERROR DESC:\n",error.debugDescription)
     }
+        print("\n RESPONSE DESC:\n",response?.description as Any)
+                print("\n DATA DESC:\n",data?.description as Any)
+                        print("\n DATA DESC:\n",data?.base64EncodedString() as Any)
     
+        let responseData = String(data: data!, encoding: String.Encoding.utf8)
+        print("\n RESPONSE DATA:\n",responseData as Any)
+        
     if let httpResponse = response as? HTTPURLResponse{
-    print("status code for get request on login is \(httpResponse.statusCode))")
+    print("\n \n STATUS CODE: \n status code for get request on login is \(httpResponse.statusCode)")
     
     }
-    print(response as Any)
+        
     
     })
     send.resume()
