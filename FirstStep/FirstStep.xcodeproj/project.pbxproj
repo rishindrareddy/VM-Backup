@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FDC93061ECA7CDF00A5CF96 /* NewLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC93051ECA7CDF00A5CF96 /* NewLoginViewController.swift */; };
 		5B23F8E01EC02DC000F24EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F8DF1EC02DC000F24EC9 /* AppDelegate.swift */; };
 		5B23F8E21EC02DC000F24EC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F8E11EC02DC000F24EC9 /* ViewController.swift */; };
 		5B23F8E51EC02DC000F24EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B23F8E31EC02DC000F24EC9 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		5B23F8EA1EC02DC000F24EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B23F8E81EC02DC000F24EC9 /* LaunchScreen.storyboard */; };
 		5B23F8F51EC02DC000F24EC9 /* FirstStepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F8F41EC02DC000F24EC9 /* FirstStepTests.swift */; };
 		5B23F9001EC02DC000F24EC9 /* FirstStepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F8FF1EC02DC000F24EC9 /* FirstStepUITests.swift */; };
-		5B23F90E1EC03A7000F24EC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F90D1EC03A7000F24EC9 /* LoginViewController.swift */; };
 		5B23F9101EC03AD200F24EC9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23F90F1EC03AD200F24EC9 /* SignupViewController.swift */; };
 		5B8869441EC04598005A52BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8869431EC04598005A52BA /* HomeViewController.swift */; };
 		5B8869461EC048B4005A52BA /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8869451EC048B4005A52BA /* VerifyEmailViewController.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FDC93051ECA7CDF00A5CF96 /* NewLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLoginViewController.swift; sourceTree = "<group>"; };
 		5B23F8DC1EC02DC000F24EC9 /* FirstStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B23F8DF1EC02DC000F24EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B23F8E11EC02DC000F24EC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		5B23F8FB1EC02DC000F24EC9 /* FirstStepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstStepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B23F8FF1EC02DC000F24EC9 /* FirstStepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepUITests.swift; sourceTree = "<group>"; };
 		5B23F9011EC02DC000F24EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B23F90D1EC03A7000F24EC9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5B23F90F1EC03AD200F24EC9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		5B8869431EC04598005A52BA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B8869451EC048B4005A52BA /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
@@ -111,10 +111,10 @@
 				5B23F8DF1EC02DC000F24EC9 /* AppDelegate.swift */,
 				5B23F8E11EC02DC000F24EC9 /* ViewController.swift */,
 				5B23F8E31EC02DC000F24EC9 /* Main.storyboard */,
+				3FDC93051ECA7CDF00A5CF96 /* NewLoginViewController.swift */,
 				5B8869451EC048B4005A52BA /* VerifyEmailViewController.swift */,
 				5B8869431EC04598005A52BA /* HomeViewController.swift */,
 				5B23F90F1EC03AD200F24EC9 /* SignupViewController.swift */,
-				5B23F90D1EC03A7000F24EC9 /* LoginViewController.swift */,
 				5B23F8E61EC02DC000F24EC9 /* Assets.xcassets */,
 				5B23F8E81EC02DC000F24EC9 /* LaunchScreen.storyboard */,
 				5B23F8EB1EC02DC000F24EC9 /* Info.plist */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B8869441EC04598005A52BA /* HomeViewController.swift in Sources */,
-				5B23F90E1EC03A7000F24EC9 /* LoginViewController.swift in Sources */,
+				3FDC93061ECA7CDF00A5CF96 /* NewLoginViewController.swift in Sources */,
 				5B23F8E21EC02DC000F24EC9 /* ViewController.swift in Sources */,
 				5B23F9101EC03AD200F24EC9 /* SignupViewController.swift in Sources */,
 				5B8869461EC048B4005A52BA /* VerifyEmailViewController.swift in Sources */,
