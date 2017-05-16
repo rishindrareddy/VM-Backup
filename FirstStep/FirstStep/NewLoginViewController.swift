@@ -71,12 +71,9 @@ class NewLoginViewController: UIViewController {
     if(error != nil){
     print("\nERROR DESC:\n",error.debugDescription)
     }
-        print("\n RESPONSE DESC:\n",response?.description as Any)
-                print("\n DATA DESC:\n",data?.description as Any)
-                        print("\n DATA DESC:\n",data?.base64EncodedString() as Any)
     
         let responseData = String(data: data!, encoding: String.Encoding.utf8)
-        print("\n RESPONSE DATA:\n",responseData as Any)
+        print("\n RESPONSE DATA:\n",responseData! as Any)
         
     if let httpResponse = response as? HTTPURLResponse{
     print("\n \n STATUS CODE: \n status code for get request on login is \(httpResponse.statusCode)")
@@ -92,6 +89,11 @@ class NewLoginViewController: UIViewController {
     
     
 
+    
+    // TOAST MESSAGE
+    
+    
+    
     /*
     // MARK: - Navigation
 
